@@ -147,7 +147,7 @@ apt list --upgradable
 
 La salida confirmó **Ubuntu 26.04.1 LTS**. Durante la actualización hubo servicios que pospusieron su reinicio y se decidió no reiniciar inmediatamente las VMs; esto se dejó registrado como una limitación de ese momento, no como recomendación general.
 
-![Versión Ubuntu 26.04.1 LTS en monitor01](../screenshots/network/10-monitor-os-version.png)
+![Versión Ubuntu 26.04.1 LTS en monitor01](../screenshots/node-exporter/10-monitor-os-version.png)
 
 *Figura — Versión Ubuntu 26.04.1 LTS en monitor01.*
 
@@ -213,7 +213,7 @@ curl --connect-timeout 5 -sS http://192.168.56.20:9100/metrics | grep '^node_mem
 
 **Por qué es importante:** demuestra que `monitor01` puede consumir métricas por la red interna, no solo hacer ping a `servidor01`.
 
-![Consulta remota de métricas de servidor01 desde monitor01](../screenshots/node-exporter/38-server01-node-exporter-remote-test.png)
+![Consulta remota de métricas de servidor01 desde monitor01](../screenshots/prometheus/38-server01-node-exporter-remote-test.png)
 
 *Figura — Consulta remota de métricas de servidor01 desde monitor01.*
 
