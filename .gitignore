@@ -1,0 +1,68 @@
+# Infra Monitoring Lab — archivos locales y sensibles
+# Las capturas, los documentos Markdown, los ejemplos YAML y los dashboards JSON
+# deben poder añadirse al repositorio.
+
+# Variables de entorno y credenciales
+.env
+.env.*
+!.env.example
+!.env.sample
+secrets/
+.secrets/
+credentials/
+*.secret
+*.secret.yaml
+*.secret.yml
+*.secret.json
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+*.kubeconfig
+
+# Copias de seguridad, temporales y editores
+*.bak
+*.backup
+*.old
+*.orig
+*.swp
+*.swo
+*~
+*.tmp
+*.temp
+.vscode/
+.idea/
+
+# Datos, registros y exportaciones locales
+*.log
+*.log.*
+*.db
+*.sqlite
+*.sqlite3
+*.tsdb
+data/
+backups/
+tmp/
+cache/
+
+# Discos y estados de máquinas virtuales
+*.vdi
+*.vmdk
+*.vhd
+*.vhdx
+*.qcow2
+*.ova
+*.ovf
+*.vbox
+*.vbox-prev
+*.sav
+
+# Archivos específicos del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
